@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYPHERX Ecommerce Website</title>
+    <!--CSS link-->
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <!--BOXICONS link-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">CYPHERX</a>
+        <!-- Nav -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <!-- CartIcon -->
+        <i class='bx bxs-cart' id="cart-icon"></i>
+          <!-- Cart -->
+        <div class="cart">
+            <h2 class="cart-title">Your cart</h2>
+            <div class="cart-content">
+
+            </div>
+            <!-- Total price -->
+            <div class="total">
+                <div class="price-text">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy button -->
+                <button type="button" class="btn-buy">Buy Now</button>
+            </div>
+
+            <!-- Closing cart -->
+            <i class='bx bx-x' id="close-cart"></i>
+        </div>
+    </header>
+    <form class="form" action="" type="" onsubmit="validation(this)">
+        <input id="fname" type="text" name="name" placeholder="First name...">
+        <input id="surname" type="text" name="surname" placeholder="Last name...">
+        <input id="email" type="email" name="email" placeholder="Email...">
+        <textarea id="msg" name="message" placeholder="Your message..."></textarea>
+        <button name="submit" type="submit"> Submit </button>
+    </form>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
